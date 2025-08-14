@@ -383,7 +383,7 @@ export class NeuralPanelTest {
     // Simulate screenshot capture
     console.log(`📸 Screenshot: ${description}`);
 
-    // In real implementation, this would capture actual screenshots
+    // TODO(2025-08-14): implement properly, this would capture actual screenshots
     const state = {
       timestamp: new Date().toISOString(),
       description,

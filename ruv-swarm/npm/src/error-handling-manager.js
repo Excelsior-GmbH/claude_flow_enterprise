@@ -651,7 +651,7 @@ export class ErrorHandlingManager extends EventEmitter {
     }
 
     /**
-     * Get successful operations count (placeholder - should integrate with actual metrics)
+     * Get successful operations count (TODO(2025-08-14): implement properly - should integrate with actual metrics)
      */
     getSuccessfulOperationsCount() {
         // This would integrate with actual operation metrics

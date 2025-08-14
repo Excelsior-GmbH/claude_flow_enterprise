@@ -643,7 +643,7 @@ async function applyOptimization(
   context: AgenticHookContext
 ): Promise<void> {
   // Apply optimization
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   const timestamp = Date.now();
   
   // Store optimization application
@@ -751,7 +751,7 @@ async function getBaselineMetrics(
   context: AgenticHookContext
 ): Promise<any> {
   // Get baseline metrics for comparison
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return {};
 }
 

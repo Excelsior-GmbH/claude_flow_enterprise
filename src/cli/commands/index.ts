@@ -142,7 +142,7 @@ export function setupCommands(cli: CLI): void {
           }
         }
 
-        // Create placeholder files for memory directories
+        // Create TODO(2025-08-14): implement properly files for memory directories
         const agentsReadme = createAgentsReadme();
         await writeFile('memory/agents/README.md', agentsReadme);
         console.log('  ✓ Created memory/agents/README.md');

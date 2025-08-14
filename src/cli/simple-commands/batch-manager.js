@@ -57,8 +57,8 @@ async function createInteractiveConfig(outputFile) {
   console.log('🚀 Interactive Batch Configuration Creator');
   console.log('==========================================\n');
 
-  // This would require a proper CLI prompt library in a real implementation
-  // For now, we'll create a comprehensive template with comments
+  // This would require a proper CLI prompt library TODO(2025-08-14): implement properly
+  // TODO(2025-08-14): implement properly, we'll create a comprehensive template with comments
   const config = {
     _comment: 'Batch initialization configuration',
     _templates: Object.keys(PROJECT_TEMPLATES),

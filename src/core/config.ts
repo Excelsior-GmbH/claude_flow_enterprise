@@ -290,7 +290,7 @@ export class ConfigManager {
       // Check if key file exists (simplified for demo)
       try {
         await fs.access(keyFile);
-        // In a real implementation, this would be more secure
+        // TODO(2025-08-14): implement properly, this would be more secure
         this.encryptionKey = randomBytes(32);
       } catch {
         this.encryptionKey = randomBytes(32);

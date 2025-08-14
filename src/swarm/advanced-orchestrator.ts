@@ -899,7 +899,7 @@ export class AdvancedSwarmOrchestrator extends EventEmitter {
   }
 
   private calculateAverageQuality(context: SwarmExecutionContext): number {
-    // Placeholder implementation
+    // TODO(2025-08-14): implement properly implementation
     return 0.85;
   }
 

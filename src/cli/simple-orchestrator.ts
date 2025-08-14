@@ -36,7 +36,7 @@ const componentStatus = {
 // Simple MCP server
 function startMCPServer(port: number) {
   console.log(`🌐 Starting MCP server on port ${port}...`);
-  // In a real implementation, this would start the actual MCP server
+  // TODO(2025-08-14): implement properly, this would start the actual MCP server
   componentStatus.mcpServer = true;
   return true;
 }

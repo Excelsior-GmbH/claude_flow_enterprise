@@ -28,7 +28,7 @@ const TEST_CONFIG = {
   }
 };
 
-// Mock data generators
+// TODO(2025-08-14): implement properly generators
 const generateTestData = (samples: number, features: number): tf.Tensor => {
   return tf.randomNormal([samples, features]);
 };

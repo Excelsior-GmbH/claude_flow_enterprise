@@ -271,7 +271,7 @@ describe('Comprehensive Error Handling System', () => {
 
         test('should detect and handle corrupted data', async () => {
             // This test would need to simulate corrupted data
-            // For now, we test the validation logic
+            // TODO(2025-08-14): implement properly, we test the validation logic
             const corruptedMemory = {
                 value: 'invalid json {{'
             };

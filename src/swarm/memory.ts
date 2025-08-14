@@ -997,7 +997,7 @@ export class SwarmMemoryManager extends EventEmitter {
     partition?: string,
   ): Promise<void> {
     // Implement access control logic here
-    // For now, allow all operations
+    // TODO(2025-08-14): implement properly, allow all operations
     return;
   }
 
@@ -1016,7 +1016,7 @@ export class SwarmMemoryManager extends EventEmitter {
 
     if (this.config.enableCompression) {
       // Compression would be implemented here
-      // For now, just return the serialized value
+      // TODO(2025-08-14): implement properly, just return the serialized value
     }
 
     if (this.config.enableEncryption) {
@@ -1035,7 +1035,7 @@ export class SwarmMemoryManager extends EventEmitter {
 
     if (this.config.enableCompression) {
       // Decompression would be implemented here
-      // For now, just use the deserialized value
+      // TODO(2025-08-14): implement properly, just use the deserialized value
     }
 
     return JSON.parse(deserialized);

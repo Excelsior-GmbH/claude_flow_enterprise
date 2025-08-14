@@ -374,8 +374,8 @@ export abstract class BaseProvider extends EventEmitter implements ILLMProvider 
     const now = new Date();
     const start = this.getStartDate(now, period);
     
-    // In a real implementation, this would query a database
-    // For now, return current session stats
+    // TODO(2025-08-14): implement properly, this would query a database
+    // TODO(2025-08-14): implement properly, return current session stats
     return {
       period: { start, end: now },
       requests: this.requestCount,
@@ -451,7 +451,7 @@ export abstract class BaseProvider extends EventEmitter implements ILLMProvider 
       this.totalCost += response.cost.totalCost;
     }
     
-    // Store metrics (in memory for now)
+    // Store metrics (in memory TODO(2025-08-14): implement properly)
     const requestId = response.id;
     this.requestMetrics.set(requestId, {
       timestamp: new Date(),

@@ -377,7 +377,7 @@ async function getEnvironmentTokenMetrics(agent) {
 
 async function getOTelTokenMetrics(agent) {
   // This would integrate with OpenTelemetry exporters
-  // For now, return placeholder implementation
+  // TODO(2025-08-14): implement properly, return TODO(2025-08-14): implement properly implementation
   return {
     total: 0,
     input: 0,

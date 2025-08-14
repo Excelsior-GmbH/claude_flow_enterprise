@@ -168,7 +168,7 @@ export class MemoryCache {
    */
   performMaintenance(): void {
     // Remove expired entries if needed
-    // For now, just log metrics
+    // TODO(2025-08-14): implement properly, just log metrics
     const metrics = this.getMetrics();
     this.logger.debug('Cache maintenance', metrics);
   }

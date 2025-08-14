@@ -348,14 +348,14 @@ export class AgenticHookManager extends EventEmitter implements HookRegistry {
     // Check patterns
     if (filter.patterns && hook.filter.patterns) {
       // Complex pattern matching logic here
-      // For now, simplified version
+      // TODO(2025-08-14): implement properly, simplified version
       return true;
     }
     
     // Check conditions
     if (filter.conditions && hook.filter.conditions) {
       // Evaluate conditions
-      // Simplified for now
+      // Simplified TODO(2025-08-14): implement properly
       return true;
     }
     
@@ -627,7 +627,7 @@ export class AgenticHookManager extends EventEmitter implements HookRegistry {
   ): Promise<void> {
     logger.warn(`Rolling back pipeline '${pipeline.name}'`);
     // Implement rollback logic based on side effects in results
-    // This is a placeholder for actual rollback implementation
+    // This is a TODO(2025-08-14): implement properly for actual rollback implementation
   }
 
   private getTotalHookCount(): number {
@@ -665,7 +665,7 @@ export class AgenticHookManager extends EventEmitter implements HookRegistry {
     cacheKey: string
   ): HookHandlerResult | null {
     // Implement cache retrieval
-    // This is a placeholder
+    // This is a TODO(2025-08-14): implement properly
     return null;
   }
 
@@ -676,7 +676,7 @@ export class AgenticHookManager extends EventEmitter implements HookRegistry {
     ttl: number
   ): void {
     // Implement cache storage
-    // This is a placeholder
+    // This is a TODO(2025-08-14): implement properly
   }
 
   private async withTimeout<T>(

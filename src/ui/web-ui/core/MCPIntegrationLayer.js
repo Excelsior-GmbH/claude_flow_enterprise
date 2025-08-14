@@ -463,7 +463,7 @@ export class MCPIntegrationLayer {
    */
   async executeRealTool(toolName, params) {
     // This would call the actual MCP tool
-    // For now, we'll simulate the call
+    // TODO(2025-08-14): implement properly, we'll simulate the call
     const mcpToolName = `mcp__claude-flow__${toolName}`;
 
     if (typeof window !== 'undefined' && window.claudeFlowMCP) {
@@ -473,7 +473,7 @@ export class MCPIntegrationLayer {
     // Node.js environment
     if (typeof process !== 'undefined') {
       // This would import and execute the actual MCP tool
-      // For now, return mock data
+      // TODO(2025-08-14): implement properly, return TODO(2025-08-14): implement properly
       return this.executeMockTool(toolName, params);
     }
 

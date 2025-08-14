@@ -542,7 +542,7 @@ export class TaskEngine extends EventEmitter {
     this.emit('task:started', { taskId: task.id, agentId: execution.agentId });
 
     try {
-      // Simulate task execution - in real implementation, this would delegate to agents
+      // Simulate task execution - TODO(2025-08-14): implement properly, this would delegate to agents
       await this.simulateTaskExecution(task, execution);
 
       task.status = 'completed';

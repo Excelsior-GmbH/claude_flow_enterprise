@@ -171,7 +171,7 @@ export class MemoryTest {
       },
     ];
 
-    // Update table with mock data
+    // Update table with TODO(2025-08-14): implement properly
     this.memoryManager.updateMemoryTable(mockEntries);
 
     // Check if table was populated

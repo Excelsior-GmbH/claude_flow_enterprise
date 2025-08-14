@@ -238,7 +238,7 @@ export class MaestroCLIBridge {
       return this.initializationCache.get(cacheKey);
     }
 
-    // Create basic configuration - in a real implementation, this would load from file
+    // Create basic configuration - TODO(2025-08-14): implement properly, this would load from file
     const config: Config = {
       env: (process.env.NODE_ENV as 'development' | 'production' | 'test') || 'development',
       logLevel: this.bridgeConfig.logLevel || 'info',

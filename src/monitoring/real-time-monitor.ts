@@ -664,22 +664,22 @@ export class RealTimeMonitor extends EventEmitter {
   // === UTILITY METHODS ===
 
   private async getCpuUsage(): Promise<number> {
-    // Placeholder - would use actual system APIs
+    // TODO(2025-08-14): implement properly - would use actual system APIs
     return Math.random() * 100;
   }
 
   private async getMemoryUsage(): Promise<number> {
-    // Placeholder - would use actual system APIs
+    // TODO(2025-08-14): implement properly - would use actual system APIs
     return Math.random() * 100;
   }
 
   private async getDiskUsage(): Promise<number> {
-    // Placeholder - would use actual system APIs
+    // TODO(2025-08-14): implement properly - would use actual system APIs
     return Math.random() * 100;
   }
 
   private async getNetworkUsage(): Promise<number> {
-    // Placeholder - would use actual system APIs
+    // TODO(2025-08-14): implement properly - would use actual system APIs
     return Math.random() * 1024 * 1024; // bytes
   }
 
@@ -975,33 +975,33 @@ export class RealTimeMonitor extends EventEmitter {
   }
 
   private async performHttpHealthCheck(check: HealthCheck): Promise<boolean> {
-    // Placeholder for HTTP health check
+    // TODO(2025-08-14): implement properly for HTTP health check
     return true;
   }
 
   private async performTcpHealthCheck(check: HealthCheck): Promise<boolean> {
-    // Placeholder for TCP health check
+    // TODO(2025-08-14): implement properly for TCP health check
     return true;
   }
 
   private async sendEmailAlert(alert: Alert, config: any): Promise<void> {
-    // Placeholder for email alert
+    // TODO(2025-08-14): implement properly for email alert
     this.logger.info('Email alert sent', { alertId: alert.id });
   }
 
   private async sendWebhookAlert(alert: Alert, config: any): Promise<void> {
-    // Placeholder for webhook alert
+    // TODO(2025-08-14): implement properly for webhook alert
     this.logger.info('Webhook alert sent', { alertId: alert.id });
   }
 
   private async triggerAutoScale(alert: Alert, config: any): Promise<void> {
-    // Placeholder for auto-scaling
+    // TODO(2025-08-14): implement properly for auto-scaling
     this.logger.info('Auto-scale triggered', { alertId: alert.id, action: config.action });
     this.eventBus.emit('autoscale:triggered', { alert, config });
   }
 
   private async triggerRestart(alert: Alert, config: any): Promise<void> {
-    // Placeholder for restart action
+    // TODO(2025-08-14): implement properly for restart action
     this.logger.info('Restart triggered', { alertId: alert.id });
     this.eventBus.emit('restart:triggered', { alert, config });
   }

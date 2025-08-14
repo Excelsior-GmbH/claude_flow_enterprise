@@ -750,7 +750,7 @@ async function handleRollbackCommand(subArgs, flags) {
         console.log(`  ${index + 1}. ${point.type} - ${date}`);
       });
 
-      // For now, rollback to the most recent point
+      // TODO(2025-08-14): implement properly, rollback to the most recent point
       const latest = rollbackPoints.rollbackPoints[0];
       if (latest) {
         console.log(
@@ -902,7 +902,7 @@ async function setupMemorySystem(workingDir, dryRun = false) {
 
 async function setupCoordinationSystem(workingDir, dryRun = false) {
   // Coordination system is already set up by createDirectoryStructure
-  // This is a placeholder for future coordination setup logic
+  // This is a TODO(2025-08-14): implement properly for future coordination setup logic
 }
 
 /**

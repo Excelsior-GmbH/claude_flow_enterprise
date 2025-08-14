@@ -1,0 +1,640 @@
+{
+  "root": "F:\\claude-flow-enterprise",
+  "totalViolations": 157,
+  "violations": [
+    {
+      "file": "src\\utils\\github-cli-safety-wrapper.js",
+      "msg": "dangerous construct: /\\beval\\s*\\(/"
+    },
+    {
+      "file": "src\\utils\\__tests__\\github-cli-safety-wrapper.test.js",
+      "msg": "dangerous construct: /\\beval\\s*\\(/"
+    },
+    {
+      "file": "src\\ui\\web-ui\\EnhancedProcessUI.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\EnhancedProcessUI.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\EnhancedWebUI.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\neural-panel-test.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\DAAView.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\GitHubIntegrationTest.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\GitHubIntegrationTest.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\GitHubIntegrationView.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\NeuralNetworkView.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\views\\WorkflowAutomationView.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\core\\MCPIntegrationLayer.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\core\\MCPIntegrationLayer.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\components\\ComponentLibrary.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\web-ui\\components\\ComponentLibrary.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\ui\\console\\index.html",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\styles\\console.css",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\styles\\settings.css",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\analysis-tools.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\daa-tools.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\memory-interface.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\memory-test.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\memory-tools.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\memory-tools.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\terminal-emulator.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\ui\\console\\js\\workflow-designer.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\types\\vscode.d.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\terminal\\vscode-bridge.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\terminal\\vscode-bridge.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\task\\coordination.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\task\\engine.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\swarm\\advanced-orchestrator.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\swarm\\claude-code-interface.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\swarm\\claude-code-interface.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\swarm\\coordinator.ts",
+      "msg": "stub-like phrase: /\\bstub\\b/i"
+    },
+    {
+      "file": "src\\swarm\\direct-executor.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\swarm\\executor.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\swarm\\hive-mind-integration.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\swarm\\hive-mind-integration.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\swarm\\memory.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\swarm\\prompt-manager.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\swarm\\result-aggregator.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\swarm\\strategies\\auto.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\swarm\\strategies\\research.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\hook-manager.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\hook-manager.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\llm-hooks.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\memory-hooks.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\memory-hooks.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\neural-hooks.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\services\\agentic-flow-hooks\\performance-hooks.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\providers\\base-provider.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\providers\\base-provider.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\providers\\base-provider.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\providers\\cohere-provider.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\monitoring\\diagnostics.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\monitoring\\health-check.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\monitoring\\real-time-monitor.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\migration\\migration-analyzer.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\memory\\advanced-memory-manager.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\memory\\advanced-memory-manager.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\memory\\advanced-memory-manager.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\memory\\advanced-serializer.js",
+      "msg": "dangerous construct: /new\\s+Function\\s*\\(/"
+    },
+    {
+      "file": "src\\memory\\advanced-serializer.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\memory\\cache.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\memory\\distributed-memory.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\memory\\enhanced-session-serializer.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\memory\\swarm-memory.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\mcp\\auth.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\mcp\\auth.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\mcp\\recovery\\fallback-coordinator.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\hive-mind\\core\\DatabaseManager.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\hive-mind\\core\\Memory.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\hive-mind\\core\\Memory.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\hive-mind\\core\\MemoryMonitor.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\enterprise\\audit-manager.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\enterprise\\audit-manager.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\enterprise\\cloud-manager.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\enterprise\\deployment-manager.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\core\\config.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\core\\orchestrator.ts",
+      "msg": "superficial fix pattern: /\\.catch\\(\\(\\) => \\{\\}\\)/"
+    },
+    {
+      "file": "src\\coordination\\advanced-scheduler.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\coordination\\advanced-task-executor.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\coordination\\advanced-task-executor.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\coordination\\advanced-task-executor.ts",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\coordination\\conflict-resolution.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\coordination\\manager.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\coordination\\swarm-coordinator.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\coordination\\swarm-coordinator.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\communication\\message-bus.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\completion.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\help-text.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\maestro-cli-bridge.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\node-repl.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\repl.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\simple-orchestrator.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-orchestrator.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-orchestrator.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\analysis.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\analysis.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\automation-executor.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\automation-executor.js",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\batch-manager.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\batch-manager.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\enhanced-ui-views.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\enhanced-webui-complete.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\enhanced-webui-complete.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\enhanced-webui-complete.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\github.js",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\hive-mind-wizard.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\hook-safety.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\mcp-integration-layer.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\process-ui-enhanced.js",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\sparc.js",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\swarm-webui-integration.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\sparc\\refinement.js",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\batch-init.js",
+      "msg": "superficial fix pattern: /\\.catch\\(\\(\\) => \\{\\}\\)/"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\index.js",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\index.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\rollback\\recovery-manager.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\rollback\\recovery-manager.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\rollback\\rollback-executor.js",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\init\\rollback\\rollback-executor.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\hive-mind\\communication.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\hive-mind\\memory.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\simple-commands\\hive-mind\\performance-test.js",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\agent.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\config-integration.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\config.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\commands\\index.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\monitor.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\monitor.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\commands\\monitor.ts",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\session.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\session.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\session.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\commands\\status.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\commands\\status.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\status.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\commands\\status.ts",
+      "msg": "mock-like phrase: /\\bMock data\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\swarm-spawn.ts",
+      "msg": "stub-like phrase: /In (a )?real implementation/i"
+    },
+    {
+      "file": "src\\cli\\commands\\swarm.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\workflow.ts",
+      "msg": "stub-like phrase: /\\bNot implemented\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\workflow.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "src\\cli\\commands\\start\\process-manager.ts",
+      "msg": "stub-like phrase: /\\bplaceholder\\b/i"
+    },
+    {
+      "file": "src\\cli\\commands\\start\\start-command.ts",
+      "msg": "superficial fix pattern: /\\.catch\\(\\(\\) => \\{\\}\\)/"
+    },
+    {
+      "file": "src\\agents\\agent-manager.ts",
+      "msg": "stub-like phrase: /For now\\b/i"
+    },
+    {
+      "file": "src\\agents\\agent-manager.ts",
+      "msg": "stub-like phrase: /This would (fetch|query|send|connect|execute|analyze|start|set up|gather|insert)/i"
+    },
+    {
+      "file": "examples\\user-api\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "examples\\rest-api-simple\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "examples\\litellm\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "examples\\blog-api\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "examples\\05-swarm-apps\\rest-api-advanced\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "examples\\05-swarm-apps\\rest-api\\.env.example",
+      "msg": "env file should not be committed"
+    },
+    {
+      "file": "bin\\claude-flow-node-pkg",
+      "msg": "dangerous construct: /\\beval\\s*\\(/"
+    },
+    {
+      "file": "benchmark\\src\\swarm_benchmark\\swe_bench\\optimizer.py",
+      "msg": "dangerous construct: /\\beval\\s*\\(/"
+    }
+  ],
+  "secrets": [
+    {
+      "file": "examples\\litellm\\config\\config.yaml",
+      "pattern": "aws_secret_access_key"
+    }
+  ]
+}

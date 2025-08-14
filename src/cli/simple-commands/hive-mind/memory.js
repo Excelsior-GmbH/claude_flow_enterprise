@@ -419,7 +419,7 @@ export class CollectiveMemory extends EventEmitter {
    */
   _initializeBackgroundWorker() {
     // Note: In production, this would initialize a proper Worker
-    // For now, we'll use async operations
+    // TODO(2025-08-14): implement properly, we'll use async operations
     this.backgroundQueue = [];
     this.backgroundProcessing = false;
   }
@@ -439,7 +439,7 @@ export class CollectiveMemory extends EventEmitter {
 
       if (shouldCompress) {
         // In production, use proper compression like zlib
-        // For now, we'll just mark it as compressed
+        // TODO(2025-08-14): implement properly, we'll just mark it as compressed
         compressed = 1;
       }
 
@@ -1076,7 +1076,7 @@ export class CollectiveMemory extends EventEmitter {
       };
 
       // In production, write to file
-      // For now, return the snapshot
+      // TODO(2025-08-14): implement properly, return the snapshot
       this.emit('memory:exported', { count: memories.length });
 
       return snapshot;

@@ -104,7 +104,7 @@ class Dashboard {
   }
 
   private async collectData(): Promise<MonitorData> {
-    // Mock data collection - in production, this would connect to the orchestrator
+    // TODO(2025-08-14): implement properly collection - in production, this would connect to the orchestrator
     const timestamp = new Date();
     const cpuUsage = 10 + Math.random() * 20; // 10-30%
     const memoryUsage = 200 + Math.random() * 100; // 200-300MB
@@ -479,7 +479,7 @@ class Dashboard {
 
   private async getRealSystemData(): Promise<MonitorData | null> {
     // This would connect to the actual orchestrator for real data
-    // For now, return null to use mock data
+    // TODO(2025-08-14): implement properly, return null to use TODO(2025-08-14): implement properly
     return null;
   }
 

@@ -340,7 +340,7 @@ export class CoordinationManager implements ICoordinationManager {
     this.logger.warn('Attempting to resolve deadlock', deadlock);
 
     // Simple resolution: release resources from the lowest priority agent
-    // In a real implementation, use more sophisticated strategies
+    // TODO(2025-08-14): implement properly, use more sophisticated strategies
 
     try {
       // Find the agent with the lowest priority or least work done
@@ -420,7 +420,7 @@ export class CoordinationManager implements ICoordinationManager {
     // Replace basic scheduler with advanced one
     const advancedScheduler = new AdvancedTaskScheduler(this.config, this.eventBus, this.logger);
 
-    // Transfer state if needed (in a real implementation)
+    // Transfer state if needed (TODO(2025-08-14): implement properly)
     this.scheduler = advancedScheduler;
     this.advancedSchedulingEnabled = true;
   }

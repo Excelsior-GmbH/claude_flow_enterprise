@@ -181,7 +181,7 @@ describe('CoordinationManager', () => {
       // and agent2 has resource2 and wants resource1
       
       // This would require more complex setup with actual resource dependencies
-      // For now, we'll test that the detection runs without errors
+      // TODO(2025-08-14): implement properly, we'll test that the detection runs without errors
       
       await time.tickAsync(10000);
       
@@ -403,7 +403,7 @@ describe('DependencyGraph', () => {
     graph.addTask(task1);
     
     // Second task would create cycle - should be detected
-    // In real implementation, this would be caught during validation
+    // TODO(2025-08-14): implement properly, this would be caught during validation
     const cycles = graph.detectCycles();
     // No cycles yet since we haven't added the circular dependency
     expect(cycles.length).toBe(0);

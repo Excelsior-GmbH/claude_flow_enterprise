@@ -8,7 +8,7 @@ import * as fs from 'fs/promises';
 // Global test setup
 beforeAll(async () => {
   // Ensure test directories exist
-  await fs.mkdir('/tmp', { recursive: true }).catch(() => {});
+  await fs.mkdir('/tmp', { recursive: true }).catch(err => { console.error("Unhandled promise rejection", err); });
 });
 
 // Global test cleanup
@@ -24,7 +24,7 @@ afterAll(async () => {
   ];
 
   for (const dir of testDirs) {
-    await fs.rm(dir, { recursive: true, force: true }).catch(() => {});
+    await fs.rm(dir, { recursive: true, force: true }).catch(err => { console.error("Unhandled promise rejection", err); });
   }
 });
 

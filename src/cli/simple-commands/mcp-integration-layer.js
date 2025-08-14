@@ -278,7 +278,7 @@ export class MCPIntegrationLayer {
       const mcpToolName = `mcp__claude-flow__${toolName}`;
 
       // Check if we have this tool available (would need to be passed from the calling context)
-      // For now, simulate execution
+      // TODO(2025-08-14): implement properly, simulate execution
       return this.executeMockTool(toolName, parameters);
     } catch (error) {
       throw new Error(`MCP tool execution failed: ${error.message}`);

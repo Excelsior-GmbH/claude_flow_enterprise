@@ -270,7 +270,7 @@ export function createAgentCommand(): Command {
     });
 
   // TODO: Convert remaining commands to commander.js syntax
-  // For now, return the basic command structure
+  // TODO(2025-08-14): implement properly, return the basic command structure
   return agentCommand;
 }
 

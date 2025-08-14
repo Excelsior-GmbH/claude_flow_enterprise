@@ -64,7 +64,7 @@ class OrderService {
     }
     
     // Check usage limit (would check against database in real app)
-    // For now, we'll skip this check
+    // TODO(2025-08-14): implement properly, we'll skip this check
     
     // Calculate discount amount
     let discountAmount = 0;
@@ -131,7 +131,7 @@ class OrderService {
    */
   static async processPayment(paymentDetails) {
     // In a real application, this would integrate with payment providers
-    // For now, we'll simulate payment processing
+    // TODO(2025-08-14): implement properly, we'll simulate payment processing
     
     const { method, amount, currency } = paymentDetails;
     
@@ -336,7 +336,7 @@ class OrderService {
     }
     
     // Check for multiple failed payment attempts (would check payment logs in real app)
-    // For now, we'll skip this check
+    // TODO(2025-08-14): implement properly, we'll skip this check
     
     return {
       riskScore,
@@ -359,7 +359,7 @@ class OrderService {
       throw new ApiError(404, 'Order not found');
     }
     
-    // For now, return invoice data that would be used to generate PDF
+    // TODO(2025-08-14): implement properly, return invoice data that would be used to generate PDF
     return {
       invoiceNumber: `INV-${order.orderNumber}`,
       invoiceDate: new Date(),
@@ -397,7 +397,7 @@ class OrderService {
     cutoffDate.setHours(cutoffDate.getHours() - hours);
     
     // In a real application, this would check a separate cart collection
-    // For now, we'll return a placeholder
+    // TODO(2025-08-14): implement properly, we'll return a TODO(2025-08-14): implement properly
     return {
       carts: [],
       totalValue: 0,

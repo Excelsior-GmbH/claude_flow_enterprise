@@ -520,12 +520,12 @@ export class AdvancedSerializer {
   }
 
   _compress(data) {
-    // Placeholder for compression - implement actual compression in production
+    // TODO(2025-08-14): implement properly for compression - implement actual compression in production
     return `__compressed__${Buffer.from(data).toString('base64')}`;
   }
 
   _decompress(data) {
-    // Placeholder for decompression
+    // TODO(2025-08-14): implement properly for decompression
     if (data.startsWith('__compressed__')) {
       return Buffer.from(data.substring(14), 'base64').toString();
     }

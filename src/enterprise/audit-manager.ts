@@ -1422,7 +1422,7 @@ export class AuditManager extends EventEmitter {
     entries: AuditEntry[],
   ): AuditEntry[] {
     // Simplified automated compliance checking
-    // In a real implementation, this would parse the query and evaluate against entries
+    // TODO(2025-08-14): implement properly, this would parse the query and evaluate against entries
     const violations = entries.filter((e) => {
       if (requirement.automatedCheck.query.includes('outcome:failure')) {
         return e.outcome === 'failure';

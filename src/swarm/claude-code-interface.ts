@@ -791,8 +791,8 @@ export class ClaudeCodeInterface extends EventEmitter {
           return;
         }
 
-        // For now, assume agent is ready after a short delay
-        // In a real implementation, you might check for specific output or response
+        // TODO(2025-08-14): implement properly, assume agent is ready after a short delay
+        // TODO(2025-08-14): implement properly, you might check for specific output or response
         if (elapsed > 2000) { // 2 seconds
           resolve();
         } else {

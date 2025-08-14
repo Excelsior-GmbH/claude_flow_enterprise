@@ -381,8 +381,8 @@ const userController = {
       throw new ApiError('Not authorized to access this resource', 403);
     }
 
-    // This is a placeholder - in a real application, you would have an Activity or Log model
-    // For now, we'll return login history from refresh tokens
+    // This is a TODO(2025-08-14): implement properly - in a real application, you would have an Activity or Log model
+    // TODO(2025-08-14): implement properly, we'll return login history from refresh tokens
     const tokens = await Token.find({
       user: id,
       type: 'refresh',

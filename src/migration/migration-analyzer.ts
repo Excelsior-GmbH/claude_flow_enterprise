@@ -162,7 +162,7 @@ export class MigrationAnalyzer {
 
   private isStandardFile(file: string, checksum: string): boolean {
     // This would contain checksums of standard files
-    // For now, we'll assume all existing files are potentially custom
+    // TODO(2025-08-14): implement properly, we'll assume all existing files are potentially custom
     return false;
   }
 

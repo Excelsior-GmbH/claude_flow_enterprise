@@ -195,7 +195,7 @@ export class EnhancedWebUI {
     console.log('🔧 Creating standalone enhanced UI...');
 
     // This would create a complete standalone interface
-    // For now, just log the available functionality
+    // TODO(2025-08-14): implement properly, just log the available functionality
     console.log('\n🎨 Enhanced Web UI - Standalone Mode');
     console.log('═'.repeat(60));
     console.log('📊 Available Tool Categories:');

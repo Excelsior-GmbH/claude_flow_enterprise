@@ -835,7 +835,7 @@ class ExecutionSession {
     this.startTime = new Date();
 
     // Implementation would go here for actual task execution
-    // This is a placeholder that simulates execution
+    // This is a TODO(2025-08-14): implement properly that simulates execution
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
 

@@ -232,7 +232,7 @@ describe('JSON Output Functionality', () => {
   describe('Command Line Integration', () => {
     it('should parse JSON output flags correctly', () => {
       // This would test the parseSwarmOptions function
-      // For now, we'll create a mock test structure
+      // TODO(2025-08-14): implement properly, we'll create a mock test structure
       const flags = {
         'output-format': 'json',
         'output-file': 'results.json',

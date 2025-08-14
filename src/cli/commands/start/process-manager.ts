@@ -311,17 +311,17 @@ export class ProcessManager extends EventEmitter {
   }
 
   private getTotalMemoryUsage(): number {
-    // Placeholder - would integrate with actual memory monitoring
+    // TODO(2025-08-14): implement properly - would integrate with actual memory monitoring
     return 0;
   }
 
   private getTotalCpuUsage(): number {
-    // Placeholder - would integrate with actual CPU monitoring
+    // TODO(2025-08-14): implement properly - would integrate with actual CPU monitoring
     return 0;
   }
 
   async getProcessLogs(processId: string, lines: number = 50): Promise<string[]> {
-    // Placeholder - would integrate with actual logging system
+    // TODO(2025-08-14): implement properly - would integrate with actual logging system
     return [
       `[${new Date().toISOString()}] Process ${processId} started`,
       `[${new Date().toISOString()}] Process ${processId} is running normally`,

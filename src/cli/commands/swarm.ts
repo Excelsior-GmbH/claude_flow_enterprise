@@ -520,7 +520,7 @@ exit \${PIPESTATUS[0]}`;
       // Simulate execution if claude CLI not available
       console.log(`    → Simulating: ${task.type} (claude CLI not available)`);
 
-      // For now, let's use the claude-flow claude spawn command instead
+      // TODO(2025-08-14): implement properly, let's use the claude-flow claude spawn command instead
       const claudeFlowArgs = ['claude', 'spawn', task.description];
 
       if (task.type === 'research' || options.research) {

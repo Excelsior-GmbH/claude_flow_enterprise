@@ -280,12 +280,12 @@ export class ConflictResolver {
     let context: any = {};
 
     if (preferredStrategy === 'priority') {
-      // In a real implementation, fetch agent priorities from configuration
+      // TODO(2025-08-14): implement properly, fetch agent priorities from configuration
       context.agentPriorities = new Map(
         conflict.agents.map((id, index) => [id, conflict.agents.length - index]),
       );
     } else if (preferredStrategy === 'timestamp') {
-      // In a real implementation, fetch request timestamps
+      // TODO(2025-08-14): implement properly, fetch request timestamps
       context.requestTimestamps = new Map(
         conflict.agents.map((id, index) => [id, new Date(Date.now() - index * 1000)]),
       );

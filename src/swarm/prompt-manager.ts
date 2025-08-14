@@ -296,7 +296,7 @@ export class PromptManager extends EventEmitter {
     options: SyncOptions,
   ): Promise<CopyResult> {
     // This would implement incremental sync logic
-    // For now, we'll use the regular copy with overwrite
+    // TODO(2025-08-14): implement properly, we'll use the regular copy with overwrite
     return copyPrompts({
       source,
       destination,

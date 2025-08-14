@@ -870,10 +870,10 @@ export class Orchestrator implements IOrchestrator {
     try {
       // Force stop all components
       await Promise.allSettled([
-        this.terminalManager.shutdown().catch(() => {}),
-        this.memoryManager.shutdown().catch(() => {}),
-        this.coordinationManager.shutdown().catch(() => {}),
-        this.mcpServer.stop().catch(() => {}),
+        this.terminalManager.shutdown().catch(err => { console.error("Unhandled promise rejection", err); }),
+        this.memoryManager.shutdown().catch(err => { console.error("Unhandled promise rejection", err); }),
+        this.coordinationManager.shutdown().catch(err => { console.error("Unhandled promise rejection", err); }),
+        this.mcpServer.stop().catch(err => { console.error("Unhandled promise rejection", err); }),
       ]);
     } catch (error) {
       this.logger.error('Emergency shutdown error', error);

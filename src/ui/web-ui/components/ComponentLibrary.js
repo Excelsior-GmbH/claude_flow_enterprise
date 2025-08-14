@@ -981,7 +981,7 @@ export class ComponentLibrary {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Simple chart implementation
-    // In a real implementation, you'd use Chart.js or similar
+    // TODO(2025-08-14): implement properly, you'd use Chart.js or similar
     const padding = 40;
     const chartWidth = canvas.width - padding * 2;
     const chartHeight = canvas.height - padding * 2;
@@ -1047,7 +1047,7 @@ export class ComponentLibrary {
   setTheme(theme) {
     this.theme = theme;
     // Update component styles based on theme
-    // This would be more comprehensive in a real implementation
+    // This would be more comprehensive TODO(2025-08-14): implement properly
   }
 }
 

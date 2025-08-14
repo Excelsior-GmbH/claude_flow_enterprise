@@ -361,7 +361,7 @@ async function initializeProject(projectPath, options = {}) {
 
     // Create all directories in parallel
     await Promise.all(
-      directories.map((dir) => fs.mkdir(dir, { recursive: true }).catch(() => {})),
+      directories.map((dir) => fs.mkdir(dir, { recursive: true }).catch(err => { console.error("Unhandled promise rejection", err); })),
     );
 
     // Create configuration files in parallel

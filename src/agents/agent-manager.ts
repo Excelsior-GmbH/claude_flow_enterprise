@@ -1259,7 +1259,7 @@ export class AgentManager extends EventEmitter {
 
     try {
       // This would send an actual ping to the agent
-      // For now, simulate based on last heartbeat
+      // TODO(2025-08-14): implement properly, simulate based on last heartbeat
       const agent = this.agents.get(agentId);
       if (!agent) return 0;
       const timeSinceHeartbeat = Date.now() - agent.lastHeartbeat.getTime();

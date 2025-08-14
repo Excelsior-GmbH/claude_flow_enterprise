@@ -392,10 +392,10 @@ export class RollbackExecutor {
 
     try {
       // This would typically use the BackupManager
-      // For now, we'll simulate the restoration
+      // TODO(2025-08-14): implement properly, we'll simulate the restoration
       result.actions.push(`Restored from backup: ${backupId}`);
 
-      // In a real implementation, this would:
+      // TODO(2025-08-14): implement properly, this would:
       // 1. Read the backup manifest
       // 2. Restore each file and directory
       // 3. Set correct permissions

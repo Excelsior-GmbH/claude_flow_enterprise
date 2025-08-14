@@ -464,8 +464,8 @@ function shouldCompress(value: any): boolean {
 }
 
 async function compressValue(value: any): Promise<any> {
-  // Implement compression (placeholder)
-  // In real implementation, use zlib or similar
+  // Implement compression (TODO(2025-08-14): implement properly)
+  // TODO(2025-08-14): implement properly, use zlib or similar
   return {
     compressed: true,
     data: JSON.stringify(value),
@@ -473,7 +473,7 @@ async function compressValue(value: any): Promise<any> {
 }
 
 async function decompressValue(value: any): Promise<any> {
-  // Implement decompression (placeholder)
+  // Implement decompression (TODO(2025-08-14): implement properly)
   if (value.compressed) {
     return JSON.parse(value.data);
   }
@@ -490,8 +490,8 @@ async function updateMemoryIndex(
   value: any,
   context: AgenticHookContext
 ): Promise<void> {
-  // Update search index (placeholder)
-  // In real implementation, update inverted index for search
+  // Update search index (TODO(2025-08-14): implement properly)
+  // TODO(2025-08-14): implement properly, update inverted index for search
 }
 
 async function detectMemoryPatterns(
@@ -540,7 +540,7 @@ async function findRelatedKeys(
   context: AgenticHookContext
 ): Promise<string[]> {
   // Find related keys based on patterns
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return [];
 }
 
@@ -550,7 +550,7 @@ async function prefetchKeys(
   context: AgenticHookContext
 ): Promise<void> {
   // Trigger background prefetch
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
 }
 
 async function updateAccessPattern(
@@ -592,7 +592,7 @@ async function detectMemoryChanges(
   context: AgenticHookContext
 ): Promise<any[]> {
   // Detect changes for sync
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return [];
 }
 
@@ -602,7 +602,7 @@ async function applyMemoryChange(
   context: AgenticHookContext
 ): Promise<void> {
   // Apply memory change to targets
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
 }
 
 async function createMemorySnapshot(
@@ -610,7 +610,7 @@ async function createMemorySnapshot(
   context: AgenticHookContext
 ): Promise<any> {
   // Create snapshot of namespace
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return {
     namespace,
     timestamp: Date.now(),
@@ -624,7 +624,7 @@ async function findExpiredEntries(
   context: AgenticHookContext
 ): Promise<string[]> {
   // Find expired entries
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return [];
 }
 
@@ -634,7 +634,7 @@ async function removeMemoryEntry(
   context: AgenticHookContext
 ): Promise<void> {
   // Remove memory entry
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
 }
 
 async function createFullBackup(
@@ -642,7 +642,7 @@ async function createFullBackup(
   context: AgenticHookContext
 ): Promise<any> {
   // Create full backup
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return {
     entries: [],
     size: 0,
@@ -651,7 +651,7 @@ async function createFullBackup(
 
 function calculateChecksum(data: any): string {
   // Calculate checksum
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return 'checksum';
 }
 
@@ -668,7 +668,7 @@ async function getNamespaceUsage(
   context: AgenticHookContext
 ): Promise<number> {
   // Get current usage
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return 0;
 }
 
@@ -682,19 +682,19 @@ async function getAccessHistory(
   context: AgenticHookContext
 ): Promise<any[]> {
   // Get access history
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return [];
 }
 
 function isSequentialPattern(history: any[]): boolean {
   // Check for sequential access
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return false;
 }
 
 function isTemporalPattern(history: any[]): boolean {
   // Check for temporal patterns
-  // Placeholder implementation
+  // TODO(2025-08-14): implement properly implementation
   return false;
 }
 

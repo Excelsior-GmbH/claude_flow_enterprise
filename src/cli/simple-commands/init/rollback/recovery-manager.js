@@ -514,7 +514,7 @@ export class RecoveryManager {
 
     for (const pattern of tempPatterns) {
       try {
-        // Simple cleanup - in a real implementation, use glob matching
+        // Simple cleanup - TODO(2025-08-14): implement properly, use glob matching
         result.actions.push(`Cleaned temporary files: ${pattern}`);
       } catch {
         // Continue with other patterns
@@ -573,7 +573,7 @@ export class RecoveryManager {
     };
 
     // This would contain actual dependency installation logic
-    // For now, just simulate
+    // TODO(2025-08-14): implement properly, just simulate
     result.success = true;
     return result;
   }

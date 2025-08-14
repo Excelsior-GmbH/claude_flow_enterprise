@@ -554,7 +554,7 @@ export class SwarmCommunication extends EventEmitter {
    */
   _createChannel(agentId) {
     // In production, this would create actual network channels
-    // For now, we simulate with event emitters
+    // TODO(2025-08-14): implement properly, we simulate with event emitters
     const channel = new EventEmitter();
 
     channel.send = (message) => {

@@ -391,7 +391,7 @@ export class SwarmMemoryManager extends EventEmitter {
       allEntries.push(...kb.entries);
     }
 
-    // Simple text search (in real implementation, use better search)
+    // Simple text search (TODO(2025-08-14): implement properly, use better search)
     const queryLower = query.toLowerCase();
     const results = allEntries.filter((entry) => {
       const contentStr = JSON.stringify(entry.content).toLowerCase();

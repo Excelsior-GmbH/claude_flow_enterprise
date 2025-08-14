@@ -348,7 +348,7 @@ export class AuthManager implements IAuthManager {
   }
 
   private verifyPassword(providedPassword: string, storedPassword: string): boolean {
-    // For now, using simple hash comparison
+    // TODO(2025-08-14): implement properly, using simple hash comparison
     // In production, use proper password hashing like bcrypt
     const hashedProvided = this.hashPassword(providedPassword);
     const hashedStored = this.hashPassword(storedPassword);

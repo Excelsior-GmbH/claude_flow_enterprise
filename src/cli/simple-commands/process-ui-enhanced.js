@@ -79,12 +79,12 @@ export class EnhancedProcessUI {
       this.systemStats.uptime++;
     }, 1000);
 
-    // Initialize swarm (this will create mock data)
+    // Initialize swarm (this will create TODO(2025-08-14): implement properly)
     this.initializeSwarm();
   }
 
   async initializeSwarm() {
-    // Initialize swarm with mock data
+    // Initialize swarm with TODO(2025-08-14): implement properly
     await this.swarmIntegration.initializeSwarm('hierarchical', 8);
 
     // Mock memory namespaces

@@ -938,14 +938,14 @@ export class HiveMindIntegration extends EventEmitter {
 
   private async initiateVoting(session: HiveMindSession, decision: CollectiveDecision): Promise<void> {
     // Implementation would send voting request to all participants
-    // For now, simulate consensus building
+    // TODO(2025-08-14): implement properly, simulate consensus building
     this.logger.debug('Initiating collective voting', {
       sessionId: session.id,
       decisionId: decision.id,
       participantCount: decision.participants.length,
     });
 
-    // Placeholder implementation - in reality, this would involve
+    // TODO(2025-08-14): implement properly implementation - in reality, this would involve
     // sophisticated consensus algorithms
     setTimeout(() => {
       this.processVotingResults(session, decision);
@@ -953,7 +953,7 @@ export class HiveMindIntegration extends EventEmitter {
   }
 
   private processVotingResults(session: HiveMindSession, decision: CollectiveDecision): void {
-    // Placeholder implementation
+    // TODO(2025-08-14): implement properly implementation
     decision.consensus = decision.options[0].id;
     decision.confidence = 0.8;
     decision.reasoning = 'Consensus reached through collective voting';

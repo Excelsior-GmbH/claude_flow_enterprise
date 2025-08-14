@@ -285,7 +285,7 @@ export class Memory extends EventEmitter {
   private async optimizeDatabaseSettings(): Promise<void> {
     try {
       // Database performance optimizations would go here
-      // For now, this is a placeholder for future database-specific optimizations
+      // TODO(2025-08-14): implement properly, this is a TODO(2025-08-14): implement properly for future database-specific optimizations
       this.emit('databaseOptimized');
     } catch (error) {
       this.emit('error', error);
@@ -598,7 +598,7 @@ export class Memory extends EventEmitter {
    */
   private searchInCache(options: MemorySearchOptions, results: MemoryEntry[]): void {
     // Note: This would require implementing cache iteration
-    // For now, this is a placeholder for future cache search optimization
+    // TODO(2025-08-14): implement properly, this is a TODO(2025-08-14): implement properly for future cache search optimization
   }
 
   /**

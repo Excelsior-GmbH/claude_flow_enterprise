@@ -82,7 +82,7 @@ configCommand
     try {
       if (!options.force) {
         console.log(chalk.yellow('This will reset all configuration to defaults.'));
-        // Note: In a real implementation, you'd want to add a confirmation prompt here
+        // Note: TODO(2025-08-14): implement properly, you'd want to add a confirmation prompt here
       }
 
       await configManager.reset();

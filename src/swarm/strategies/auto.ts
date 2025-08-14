@@ -638,7 +638,7 @@ export class AutoStrategy extends BaseStrategy {
   }
 
   private identifyComponents(description: string): string[] {
-    // Simple component identification - in a real implementation this would be more sophisticated
+    // Simple component identification - TODO(2025-08-14): implement properly this would be more sophisticated
     const components = ['Core Logic', 'User Interface', 'Data Layer'];
 
     if (description.toLowerCase().includes('api')) {

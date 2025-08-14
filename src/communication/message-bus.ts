@@ -834,7 +834,7 @@ export class MessageBus extends EventEmitter {
     filter: MessageFilter,
     context: any,
   ): Promise<AgentId[]> {
-    // Placeholder for receiver filtering logic
+    // TODO(2025-08-14): implement properly for receiver filtering logic
     return receivers;
   }
 
@@ -1073,12 +1073,12 @@ export class MessageBus extends EventEmitter {
   }
 
   private updateChannelStatistics(channel: MessageChannel): void {
-    // Placeholder for channel statistics calculation
+    // TODO(2025-08-14): implement properly for channel statistics calculation
     channel.statistics.lastActivity = new Date();
   }
 
   private updateQueueStatistics(queue: MessageQueue): void {
-    // Placeholder for queue statistics calculation
+    // TODO(2025-08-14): implement properly for queue statistics calculation
     queue.statistics.depth = queue.messages.length;
   }
 
@@ -1144,17 +1144,17 @@ export class MessageBus extends EventEmitter {
   }
 
   private async compress(content: any): Promise<any> {
-    // Placeholder for compression
+    // TODO(2025-08-14): implement properly for compression
     return content;
   }
 
   private async encrypt(content: any): Promise<any> {
-    // Placeholder for encryption
+    // TODO(2025-08-14): implement properly for encryption
     return content;
   }
 
   private async persistMessages(): Promise<void> {
-    // Placeholder for message persistence
+    // TODO(2025-08-14): implement properly for message persistence
     this.logger.info('Persisting messages', { count: this.messageStore.size });
   }
 

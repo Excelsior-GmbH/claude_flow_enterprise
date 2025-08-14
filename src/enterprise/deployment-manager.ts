@@ -1322,7 +1322,7 @@ export class DeploymentManager extends EventEmitter {
 
   private calculateLeadTime(deployments: Deployment[]): number {
     // This would typically calculate from commit to production
-    // For now, return average deployment time
+    // TODO(2025-08-14): implement properly, return average deployment time
     const completedDeployments = deployments.filter((d) => d.metrics.duration);
 
     if (completedDeployments.length === 0) return 0;

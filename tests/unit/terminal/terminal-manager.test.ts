@@ -8,7 +8,7 @@ import { expect } from "@jest/globals";
 import { TerminalManager } from '../../../src/terminal/manager.ts';
 import { TerminalPool } from '../../../src/terminal/pool.ts';
 import { NativeTerminalAdapter } from '../../../src/terminal/adapters/native.ts';
-// Mock factories and utilities (inline for now)
+// Mock factories and utilities (inline TODO(2025-08-14): implement properly)
 const AsyncTestUtils = {
   waitFor: (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 };
@@ -32,7 +32,7 @@ const TestAssertions = {
 const MockFactory = {
   createMock: (obj: any) => obj
 };
-// Test data generators (inline for now)
+// Test data generators (inline TODO(2025-08-14): implement properly)
 const generateTerminalSessions = (count: number) => {
   return Array.from({ length: count }, (_, i) => ({
     id: `session-${i}`,

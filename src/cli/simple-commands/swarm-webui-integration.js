@@ -31,7 +31,7 @@ export class SwarmWebUIIntegration {
       this.ui.addLog('info', `Initializing ${topology} swarm with ${maxAgents} agents...`);
 
       // This would integrate with actual ruv-swarm MCP tools
-      // For now, simulate swarm initialization
+      // TODO(2025-08-14): implement properly, simulate swarm initialization
       this.swarmActive = true;
       this.swarmId = `swarm-${Date.now()}`;
 

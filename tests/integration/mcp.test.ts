@@ -427,7 +427,7 @@ describe('MCP Integration Tests', () => {
 
     it('should spawn an agent', async () => {
       // This would require a more complex setup with actual tool execution
-      // For now, we verify the tools are registered
+      // TODO(2025-08-14): implement properly, we verify the tools are registered
       const healthStatus = await server.getHealthStatus();
       expect(healthStatus.healthy).toBe(true);
     });

@@ -1240,7 +1240,7 @@ COORDINATION KEY POINTS:
         } else {
           // Use existing Claude instance
           // In a full implementation, this would send the task to the running instance
-          // For now, we'll spawn a new instance per task for simplicity
+          // TODO(2025-08-14): implement properly, we'll spawn a new instance per task for simplicity
           
           const agent = claudeInstance.agent;
           const taskPrompt = this.createTaskPrompt(task, agent, workflow);
@@ -1257,7 +1257,7 @@ COORDINATION KEY POINTS:
             }
           }
           
-          // For now, spawn a new instance for each task
+          // TODO(2025-08-14): implement properly, spawn a new instance for each task
           const taskClaudeProcess = await this.spawnClaudeInstance(agent, taskPrompt, chainOptions);
           
           // Store the output stream for potential chaining
@@ -1523,7 +1523,7 @@ export async function loadWorkflowFromFile(filePath) {
     if (filePath.endsWith('.json')) {
       return JSON.parse(content);
     } else if (filePath.endsWith('.yaml') || filePath.endsWith('.yml')) {
-      // For now, just return error - YAML support can be added later
+      // TODO(2025-08-14): implement properly, just return error - YAML support can be added later
       throw new Error('YAML workflows not yet supported');
     } else {
       throw new Error('Unsupported workflow file format. Use .json or .yaml');

@@ -39,7 +39,7 @@ describe('Agent Type Validation Consistency', () => {
 
   test('Error wrapper validation uses consistent agent types', () => {
     // This would require importing the error wrapper module
-    // For now, we've manually verified it's updated
+    // TODO(2025-08-14): implement properly, we've manually verified it's updated
     expect(true).toBe(true);
   });
 });

@@ -334,7 +334,7 @@ async function stopExistingInstance(): Promise<void> {
       // Process already stopped
     }
 
-    await Deno.remove('.claude-flow.pid').catch(() => {});
+    await Deno.remove('.claude-flow.pid').catch(err => { console.error("Unhandled promise rejection", err); });
     console.log(chalk.green('✓ Existing instance stopped'));
   } catch (error) {
     console.warn(
@@ -504,7 +504,7 @@ async function waitForSystemReady(processManager: ProcessManager): Promise<void>
 
 async function cleanupOnFailure(): Promise<void> {
   try {
-    await Deno.remove('.claude-flow.pid').catch(() => {});
+    await Deno.remove('.claude-flow.pid').catch(err => { console.error("Unhandled promise rejection", err); });
     console.log(chalk.gray('Cleaned up PID file'));
   } catch {
     // Ignore cleanup errors
@@ -513,7 +513,7 @@ async function cleanupOnFailure(): Promise<void> {
 
 async function cleanupOnShutdown(): Promise<void> {
   try {
-    await Deno.remove('.claude-flow.pid').catch(() => {});
+    await Deno.remove('.claude-flow.pid').catch(err => { console.error("Unhandled promise rejection", err); });
     console.log(chalk.gray('Cleaned up PID file'));
   } catch {
     // Ignore cleanup errors

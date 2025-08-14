@@ -111,7 +111,7 @@ class ProductService {
    */
   static async getRecommendations(userId, limit = 10) {
     // In a real application, this would use machine learning or collaborative filtering
-    // For now, we'll return popular products
+    // TODO(2025-08-14): implement properly, we'll return popular products
     const recommendations = await Product.find({
       status: 'active',
       visibility: 'visible',

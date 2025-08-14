@@ -64,7 +64,7 @@ export const PerformanceTestUtils = {
           fn().then(() => {
             successfulRequests++;
             responseTimes.push(performance.now() - reqStart);
-          }).catch(() => {})
+          }).catch(err => { console.error("Unhandled promise rejection", err); })
         );
         totalRequests++;
       }

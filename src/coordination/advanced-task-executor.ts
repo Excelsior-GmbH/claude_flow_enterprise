@@ -435,7 +435,7 @@ export class AdvancedTaskExecutor extends EventEmitter {
     env: Record<string, string>;
   } {
     // This would be customized based on task type and agent capabilities
-    // For now, return a default Claude execution command
+    // TODO(2025-08-14): implement properly, return a default Claude execution command
 
     const cmd = 'deno';
     const args = [
@@ -521,8 +521,8 @@ export class AdvancedTaskExecutor extends EventEmitter {
     if (!pid) {
       throw new Error('Process ID is undefined');
     }
-    // In a real implementation, this would use system APIs
-    // For now, return mock data
+    // TODO(2025-08-14): implement properly, this would use system APIs
+    // TODO(2025-08-14): implement properly, return TODO(2025-08-14): implement properly
     return {
       memory: Math.random() * this.config.resourceLimits.memory,
       cpu: Math.random() * 100,

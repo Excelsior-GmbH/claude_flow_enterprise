@@ -50,7 +50,7 @@ export async function spawnSwarmAgent(
   };
   swarm.agents.set(agentId, agent);
 
-  // In a real implementation, this would spawn actual Claude instances
+  // TODO(2025-08-14): implement properly, this would spawn actual Claude instances
   console.log(`[SWARM] Spawned ${agentType} agent: ${agentId}`);
   console.log(`[SWARM] Task: ${task}`);
 

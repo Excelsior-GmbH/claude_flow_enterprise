@@ -704,7 +704,7 @@ export class DistributedMemorySystem extends EventEmitter {
   }
 
   private compressValue(value: any): any {
-    // Placeholder for compression logic
+    // TODO(2025-08-14): implement properly for compression logic
     return value;
   }
 

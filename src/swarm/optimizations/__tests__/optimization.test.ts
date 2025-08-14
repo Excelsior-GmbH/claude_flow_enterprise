@@ -2,7 +2,7 @@
  * Tests for Swarm Optimizations
  */
 
-// Tests will skip ClaudeAPI-dependent tests for now
+// Tests will skip ClaudeAPI-dependent tests TODO(2025-08-14): implement properly
 
 import { describe, it, expect, beforeEach, afterEach, jest } from '@jest/globals';
 import { CircularBuffer } from '../circular-buffer.js';

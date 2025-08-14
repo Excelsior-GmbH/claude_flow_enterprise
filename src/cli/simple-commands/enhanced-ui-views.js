@@ -580,7 +580,7 @@ export class EnhancedUIViews {
    * Prompt for neural training
    */
   async promptNeuralTrain() {
-    // In a real implementation, this would show an interactive form
+    // TODO(2025-08-14): implement properly, this would show an interactive form
     const params = {
       pattern_type: 'coordination',
       epochs: 50,

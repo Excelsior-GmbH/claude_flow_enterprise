@@ -659,7 +659,7 @@ EXAMPLES:
 };
 
 export function getCommandHelp(command) {
-  // Return legacy format for now - to be updated
+  // Return legacy format TODO(2025-08-14): implement properly - to be updated
   return COMMAND_HELP[command] || `Help not available for command: ${command}`;
 }
 

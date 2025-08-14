@@ -187,7 +187,7 @@ async function listSessions(options: any): Promise<void> {
 
 async function saveSession(name: string | undefined, options: any): Promise<void> {
   try {
-    // Get current session state (mock for now)
+    // Get current session state (mock TODO(2025-08-14): implement properly)
     const currentState = await getCurrentSessionState();
 
     if (!name) {
@@ -294,7 +294,7 @@ async function restoreSession(sessionId: string, options: any): Promise<void> {
       }
     }
 
-    // Restore session (mock for now)
+    // Restore session (mock TODO(2025-08-14): implement properly)
     console.log(chalk.yellow('Restoring session...'));
 
     if (options.merge) {

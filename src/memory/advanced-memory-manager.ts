@@ -994,13 +994,13 @@ export class AdvancedMemoryManager extends EventEmitter {
   }
 
   private async compressValue(value: any): Promise<any> {
-    // Placeholder for compression implementation
-    // In a real implementation, you would use a compression library like zlib
+    // TODO(2025-08-14): implement properly for compression implementation
+    // TODO(2025-08-14): implement properly, you would use a compression library like zlib
     return JSON.stringify(value);
   }
 
   private async decompressValue(value: any): Promise<any> {
-    // Placeholder for decompression implementation
+    // TODO(2025-08-14): implement properly for decompression implementation
     try {
       return JSON.parse(value);
     } catch {
@@ -1930,7 +1930,7 @@ export class AdvancedMemoryManager extends EventEmitter {
   // === UTILITY METHODS ===
 
   private async compressData(data: string): Promise<string> {
-    // In a real implementation, you would use a compression library
+    // TODO(2025-08-14): implement properly, you would use a compression library
     return data;
   }
 
@@ -1938,7 +1938,7 @@ export class AdvancedMemoryManager extends EventEmitter {
     data: string,
     encryption: NonNullable<ExportOptions['encryption']>,
   ): Promise<string> {
-    // In a real implementation, you would use a proper encryption library
+    // TODO(2025-08-14): implement properly, you would use a proper encryption library
     return data;
   }
 

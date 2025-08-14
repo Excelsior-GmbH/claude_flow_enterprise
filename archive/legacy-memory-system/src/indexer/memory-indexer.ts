@@ -448,10 +448,10 @@ export class MemoryIndexer extends EventEmitter {
   }
 
   /**
-   * Generate text embeddings (placeholder - would use real model in production)
+   * Generate text embeddings (TODO(2025-08-14): implement properly - would use real model in production)
    */
   async generateEmbedding(text: string): Promise<number[]> {
-    // This is a placeholder - in production, you would use a real embedding model
+    // This is a TODO(2025-08-14): implement properly - in production, you would use a real embedding model
     // like OpenAI's text-embedding-ada-002 or a local model
     
     const dimensions = this.index.vectors?.dimensions || 384;

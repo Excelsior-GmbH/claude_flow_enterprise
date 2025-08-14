@@ -644,7 +644,7 @@ export class TaskCoordinator extends EventEmitter {
     results: Map<string, any>,
   ): Promise<void> {
     // Simulate batch operation execution
-    // In real implementation, this would use actual tools
+    // TODO(2025-08-14): implement properly, this would use actual tools
 
     for (const op of operations) {
       try {

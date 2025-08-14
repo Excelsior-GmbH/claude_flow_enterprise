@@ -146,7 +146,7 @@ export class PerformanceTest {
     console.log('💾 Testing Memory Operations...');
 
     // This would test the CollectiveMemory optimizations
-    // For now, we'll simulate the test
+    // TODO(2025-08-14): implement properly, we'll simulate the test
     const pooledStart = performance.now();
 
     // Simulate 100 memory operations with connection pooling

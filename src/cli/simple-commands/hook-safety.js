@@ -457,7 +457,7 @@ export class SafeHookExecutor {
 
   static async executeCommand(command, options = {}) {
     // This would integrate with the actual command execution system
-    // For now, just log what would be executed
+    // TODO(2025-08-14): implement properly, just log what would be executed
     console.log(`🔗 Executing hook command: ${command}`);
 
     // Here you would actually execute the command

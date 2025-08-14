@@ -418,7 +418,7 @@ const uploadImages = asyncHandler(async (req, res) => {
   }
   
   // In a real application, you would handle file uploads here
-  // For now, we'll assume the images are provided as URLs in the body
+  // TODO(2025-08-14): implement properly, we'll assume the images are provided as URLs in the body
   const { images } = req.body;
   
   if (!images || !Array.isArray(images)) {

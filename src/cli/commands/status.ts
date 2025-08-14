@@ -26,7 +26,7 @@ export const statusCommand = new Command()
 
 async function showStatus(options: any): Promise<void> {
   try {
-    // In a real implementation, this would connect to the running orchestrator
+    // TODO(2025-08-14): implement properly, this would connect to the running orchestrator
     const status = await getSystemStatus();
 
     if (options.json) {
@@ -264,8 +264,8 @@ function showComponentStatus(status: any, componentName: string): void {
 }
 
 async function getSystemStatus(): Promise<any> {
-  // In a real implementation, this would connect to the orchestrator
-  // For now, return mock data
+  // TODO(2025-08-14): implement properly, this would connect to the orchestrator
+  // TODO(2025-08-14): implement properly, return TODO(2025-08-14): implement properly
   return {
     overall: 'healthy',
     version: VERSION,

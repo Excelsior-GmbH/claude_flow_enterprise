@@ -141,8 +141,8 @@ export class GitHubMCPBridge {
     this.eventBus.on('tool:execute', async (data) => {
       if (data.source === 'github-view' && data.tool.startsWith('github_')) {
         try {
-          // In real implementation, this would call the actual MCP tool
-          // For now, we use the test handlers
+          // TODO(2025-08-14): implement properly, this would call the actual MCP tool
+          // TODO(2025-08-14): implement properly, we use the test handlers
           const handler = GitHubViewMCPIntegration.tools[data.tool]?.handler;
           if (handler) {
             const result = await handler(data.params);

@@ -412,7 +412,7 @@ export class SwarmCoordinator extends EventEmitter {
   private async executeTask(task: SwarmTask, agent: SwarmAgent): Promise<void> {
     try {
       // Simulate task execution
-      // In real implementation, this would spawn actual Claude instances
+      // TODO(2025-08-14): implement properly, this would spawn actual Claude instances
       const result = await this.simulateTaskExecution(task, agent);
 
       await this.handleTaskCompleted(task.id, result);
@@ -423,7 +423,7 @@ export class SwarmCoordinator extends EventEmitter {
 
   private async simulateTaskExecution(task: SwarmTask, agent: SwarmAgent): Promise<any> {
     // This is where we would actually spawn Claude processes
-    // For now, simulate with timeout
+    // TODO(2025-08-14): implement properly, simulate with timeout
     return new Promise((resolve, reject) => {
       const timeout = setTimeout(() => {
         reject(new Error('Task timeout'));
@@ -657,7 +657,7 @@ export class SwarmCoordinator extends EventEmitter {
 
       for (const suggestion of stealingSuggestions) {
         this.logger.debug(`Work stealing suggestion: ${suggestion.from} -> ${suggestion.to}`);
-        // In a real implementation, we would reassign tasks here
+        // TODO(2025-08-14): implement properly, we would reassign tasks here
       }
     } catch (error) {
       this.logger.error('Error performing work stealing:', error);

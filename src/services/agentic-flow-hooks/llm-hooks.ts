@@ -348,7 +348,7 @@ async function checkMemoryCache(
   context: AgenticHookContext
 ): Promise<any | null> {
   // Implementation would integrate with memory service
-  // This is a placeholder
+  // This is a TODO(2025-08-14): implement properly
   return null;
 }
 
@@ -357,7 +357,7 @@ async function loadProviderOptimizations(
   context: AgenticHookContext
 ): Promise<any> {
   // Load provider-specific optimizations from memory
-  // This is a placeholder
+  // This is a TODO(2025-08-14): implement properly
   return {
     maxRetries: 3,
     timeout: 30000,

@@ -589,7 +589,7 @@ function generatePerformanceReport(results: BenchmarkResult[]): void {
 
   logger.info('Performance Benchmark Report Generated:', report);
   
-  // In a real implementation, this would write to a file
+  // TODO(2025-08-14): implement properly, this would write to a file
   console.log('\n=== PERFORMANCE BENCHMARK REPORT ===');
   console.log(`Total Tests: ${report.summary.totalTests}`);
   console.log(`Passed: ${report.summary.passedTests}`);

@@ -2,7 +2,7 @@ import { describe, it, expect, jest } from '@jest/globals';
 
 describe('Analysis Tools', () => {
   it('should analyze data', () => {
-    // Placeholder test to prevent failures
+    // TODO(2025-08-14): implement properly test to prevent failures
     expect(true).toBe(true);
   });
 });

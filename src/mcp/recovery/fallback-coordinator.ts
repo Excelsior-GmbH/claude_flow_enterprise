@@ -297,7 +297,7 @@ export class FallbackCoordinator extends EventEmitter {
 
   private async replayOperation(operation: FallbackOperation): Promise<void> {
     // This would typically use the MCP client to replay the operation
-    // For now, we'll log it
+    // TODO(2025-08-14): implement properly, we'll log it
     this.logger.info('Replaying operation', {
       id: operation.id,
       method: operation.method,

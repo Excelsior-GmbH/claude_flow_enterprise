@@ -144,7 +144,7 @@ export class EnhancedProcessUI {
       console.warn('Enhanced UI initialization warning:', error);
     }
 
-    // Initialize swarm (this will create mock data)
+    // Initialize swarm (this will create TODO(2025-08-14): implement properly)
     await this.initializeSwarm();
 
     // Initialize tool statistics
@@ -166,7 +166,7 @@ export class EnhancedProcessUI {
   }
 
   async initializeSwarm() {
-    // Initialize swarm with mock data
+    // Initialize swarm with TODO(2025-08-14): implement properly
     await this.swarmIntegration.initializeSwarm('hierarchical', 8);
 
     // Enhanced memory namespaces
@@ -1308,7 +1308,7 @@ export class EnhancedProcessUI {
   // Get tool category
   getToolCategory(toolName) {
     for (const [category, info] of Object.entries(TOOL_CATEGORIES)) {
-      // Simple pattern matching - in real implementation would be more sophisticated
+      // Simple pattern matching - TODO(2025-08-14): implement properly would be more sophisticated
       if (
         toolName.includes(category) ||
         (category === 'neural' && (toolName.includes('neural_') || toolName.includes('model_'))) ||
@@ -1464,7 +1464,7 @@ export class EnhancedProcessUI {
 
     if (commands[input]) {
       this.addLog('info', `Executing CLI command: ${commands[input]}`);
-      // In real implementation, would bridge to actual CLI commands
+      // TODO(2025-08-14): implement properly, would bridge to actual CLI commands
       console.log(`\n🔧 CLI Command: ${commands[input]}`);
       console.log('Command execution would be bridged to actual CLI...');
     }

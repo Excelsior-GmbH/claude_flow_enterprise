@@ -728,7 +728,7 @@ class AnalysisTools {
       return await response.json();
     } catch (error) {
       console.error('Fetch error:', error);
-      // Show error message instead of falling back to mock data
+      // Show error message instead of falling back to TODO(2025-08-14): implement properly
       this.showError(`Failed to fetch data from ${endpoint}: ${error.message}`);
       throw error; // Re-throw to let calling functions handle the error
     }

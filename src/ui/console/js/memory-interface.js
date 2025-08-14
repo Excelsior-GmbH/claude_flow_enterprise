@@ -605,7 +605,7 @@ class MemoryInterface {
   async addNamespace() {
     const name = prompt('Enter namespace name:');
     if (name) {
-      // Create a placeholder key to establish the namespace
+      // Create a TODO(2025-08-14): implement properly key to establish the namespace
       const key = `${name}.placeholder`;
       await this.setMemoryValue(key, 'Namespace placeholder');
       await this.loadMemoryData();

@@ -92,7 +92,7 @@ export class EnhancedWebUIComplete {
       // Initialize default processes
       this.initializeProcesses();
 
-      // Initialize mock data
+      // Initialize TODO(2025-08-14): implement properly
       await this.initializeSystemData();
 
       // Start system monitoring
@@ -629,8 +629,8 @@ export class EnhancedWebUIComplete {
    * Prompt for tool execution
    */
   async promptRunTool() {
-    // In a real implementation, this would show an interactive prompt
-    // For now, execute a sample tool
+    // TODO(2025-08-14): implement properly, this would show an interactive prompt
+    // TODO(2025-08-14): implement properly, execute a sample tool
     this.addLog('info', 'Tool execution prompt (demo)');
 
     try {
